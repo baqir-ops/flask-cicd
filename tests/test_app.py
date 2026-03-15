@@ -4,7 +4,7 @@ from app import app
 def test_home_status():
     client = app.test_client()
     response = client.get('/')
-    assert response.status_code == 404  # WRONG!
+    assert response.status_code == 200  # FIXED!
 
 
 def test_home_content():
